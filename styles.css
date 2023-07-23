@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #5895cb;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Movie List Page Styles */
+.search-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-poster {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.details-button {
+    margin-top: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.page-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-list li {
+    margin: 0 0.5rem;
+}
+
+.page-list button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.page-list button:hover {
+    background-color: #0056b3;
+}
+
+/* Movie Details Page Styles */
+.movie-details {
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.movie-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.movie-info p {
+    margin: 0.5rem 0;
+    color: #444;
+}
+
+.movie-plot {
+    font-style: italic;
+    margin-top: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.user-ratings-comments {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: flex-start;
+}
+
+.user-ratings-comments label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+.stars {
+    font-size: 24px;
+    display: flex;
+    gap: 5px;
+}
+
+.star {
+    color: #FFD700;
+    cursor: pointer;
+}
+
+.user-ratings {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin: auto;
+}
+
+.user-ratings label {
+    margin-right: 1rem;
+}
+
+.user-ratings .star {
+    font-size: 1.5rem;
+}
+
+.user-ratings .star:hover,
+.user-ratings .star.checked {
+    color: #FFAC33;
+}
+
+.user-comments {
+    flex: 1;
+    margin: auto;
+}
+
+.user-comments label {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.user-comments textarea {
+    width: 100%;
+    resize: vertical;
+    border: 1px solid #ccc;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.user-comments button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.user-comments button:hover {
+    background-color: #0056b3;
+}
+
+.user-comments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-comments-list li {
+    margin-bottom: 0.5rem;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+}

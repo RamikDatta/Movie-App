@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Details</h1>
+    </header>
+    <main>
+        <div class="container" id="movie-details">
+            <!-- Movie details will be dynamically added here -->
+        </div>
+        <div class="user-ratings">
+            <label for="star-rating">Rate this movie:</label>
+            <div class="stars" id="star-rating">
+                <i class="star far fa-star" data-value="1"></i>
+                <i class="star far fa-star" data-value="2"></i>
+                <i class="star far fa-star" data-value="3"></i>
+                <i class="star far fa-star" data-value="4"></i>
+                <i class="star far fa-star" data-value="5"></i>
+            </div>
+        </div>
+        <div class="user-comments">
+            <label for="comment">Leave a comment:</label>
+            <textarea id="comment" rows="4"></textarea>
+            <button id="comment-button">Submit Comment</button>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="movie_details.js"></script>
+</body>
+</html>
